@@ -38,8 +38,16 @@ int main()
 		int hour = timeDifference / 3600;
 		int minute = ((timeDifference % 3600) / 60) - (hour * 60);
 		int second = (timeDifference % 3600) - (minute * 60);
-		cout << "Time absent	: " << hour << " : " << minute << " : " << second << endl << endl;
-		cout << shortMessage << endl;
+		cout << "Time Absent	: " << hour << " : " << minute << " : " << second << endl << endl;
+		cout << "Message Left	: " << shortMessage << endl << endl << endl;
+
+		cout << "	BBBBBBBB		RRRRRRRR		BBBBBBBB" << endl;
+		cout << "	BBB    BBB		RRR    RRR		BBB    BBB" << endl;
+		cout << "	BBB    BBB		RRR    RRR		BBB    BBB" << endl;
+		cout << "	BBBBBBBBB		RRRRRRRRR		BBBBBBBBB" << endl;
+		cout << "	BBB    BBB		RRR  RRR		BBB    BBB" << endl;
+		cout << "	BBB    BBB		RRR   RRR		BBB    BBB" << endl;
+		cout << "	BBBBBBBBB		RRR    RRR		BBBBBBBBB" << endl;
 
 		if (GetAsyncKeyState('E') & 0x8000)
 		{
