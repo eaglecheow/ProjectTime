@@ -37,7 +37,7 @@ int main()
 		int hour = timeDifference / 3600;
 		int minute = ((timeDifference % 3600) / 60) - (hour * 60);
 		int second = (timeDifference % 3600) - (minute * 60);
-		cout << "Time Absent	: " << hour << " : " << minute << " : " << second << endl << endl;
+		cout << "Time Absent	: " << ((hour < 10)?"0":"") << hour << " : " << ((minute < 10) ? "0" : "") << minute << " : " << ((second < 10) ? "0" : "") << second << endl << endl;
 		cout << "Message Left	: " << shortMessage << endl << endl << endl;
 
 		cout << "	BBBBBBBB		RRRRRRRR		BBBBBBBB" << endl;
