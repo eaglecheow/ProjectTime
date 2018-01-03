@@ -23,7 +23,6 @@ int main()
 	cin.getline(shortMessage, sizeof shortMessage);
 	cout << "Hold (shift + e) to terminate later." << endl;
 	system("pause");
-	
 	while (true)
 	{
 		//Clears scrren
@@ -54,6 +53,9 @@ int main()
 			break;
 		}
 	}
+
+	system("cd /");
+	system("rundll32.exe user32.dll, LockWorkStation");
 
 	//Exits the program
 	system("pause");
